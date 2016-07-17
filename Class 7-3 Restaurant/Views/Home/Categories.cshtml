@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Categories";
+}
+@using Restaurant.Data;
+@model Class_7_3_Restaurant.Models.CategoryViewModel
+<div class="well" style="text-align:center; width: 300px; margin: 0px auto;">
+    @foreach (Category c in Model.Categories)
+    {
+        <a href="/home/index?categoryId=@c.Id">@c.Name@(c.Name.Substring(c.Name.Length - 2) == "sh" ? "es" : "s")</a>
+        <br />
+    }
+</div>

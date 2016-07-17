@@ -1,0 +1,6 @@
+c:\users\rochel faiga\documents\visual studio 2013\Projects\Class 7-3 Restaurant\Restaurant.Data\bin\Debug\Restaurant.Data.dll.config
+c:\users\rochel faiga\documents\visual studio 2013\Projects\Class 7-3 Restaurant\Restaurant.Data\bin\Debug\Restaurant.Data.dll
+c:\users\rochel faiga\documents\visual studio 2013\Projects\Class 7-3 Restaurant\Restaurant.Data\bin\Debug\Restaurant.Data.pdb
+c:\users\rochel faiga\documents\visual studio 2013\Projects\Class 7-3 Restaurant\Restaurant.Data\obj\Debug\Restaurant.Data.csprojResolveAssemblyReference.cache
+c:\users\rochel faiga\documents\visual studio 2013\Projects\Class 7-3 Restaurant\Restaurant.Data\obj\Debug\Restaurant.Data.dll
+c:\users\rochel faiga\documents\visual studio 2013\Projects\Class 7-3 Restaurant\Restaurant.Data\obj\Debug\Restaurant.Data.pdb

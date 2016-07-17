@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "ShoppingCart";
+}
+
+@using Restaurant.Data;
+@using Class_7_3_Restaurant;
+@model Class_7_3_Restaurant.Models.ShoppingCartViewModel
+
+<a href="/home/categories" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span>Back To Categories</a>
+<br />
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+    </tr>
+    @foreach (MenuItemWithQuantity item in Model.ItemsWithQuantity)
+    {
+        <tr>
+            @*<td><input type="checkbox" data-item-id="@item.MenuItem.Id" class="form-control" /></td>*@
+            <td>@item.MenuItem.Name</td>
+            <td>@item.MenuItem.Category.Name</td>
+            <td>@(item.Quantity == null ? "1" : item.Quantity.ToString()) </td>
+            @*<td><a href="/home/deletefromorder?itemId=@item.MenuItem.Id" onclick="deleteRow(this)" class=" btn btn-warning delete-button">Delete From Order</a></td>*@
+        </tr>
+    }
+</table>
+<br />
+<form method="post" action="/home/OrderPlaced">
+    <button class="btn btn-success">Place Order</button>
+</form>
+
+
+@section scripts
+{
+    <script src="~/Scripts/Index.js"></script>
+}

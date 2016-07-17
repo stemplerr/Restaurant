@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "OrderPlaced";
+}
+
+@using Restaurant.Data;
+@model Class_7_3_Restaurant.Models.OrderPlacedViewModel
+
+<h1 style="text-align: center">Thank you for your patronage!</h1>
+<br />
+<h2 style="text-align: center">Your order number is @Model.OrderId</h2>
+<br />
+<h2 style="text-align: center">Your order status is: <span id="status">@Model.Status </span>(will update in real time)</h2>
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.signalR-1.2.2.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/SignalR.js"></script>
+}

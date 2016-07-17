@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "AdminIndex";
+}
+
+@using Restaurant.Data;
+@model Class_7_3_Restaurant.Models.AdminViewModel
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Order Number</th>
+        <th>Order Status</th>
+        <th></th>
+    </tr>
+    @foreach (Order o in Model.Orders)
+    {
+        <tr>
+            <td>@o.Id</td>
+            <td>@((Status)o.Status)</td>
+            <td><a href="/admin/details?orderId=@o.Id" class="btn btn-primary">See Details</a></td>
+        </tr>
+    }
+</table>
+
+
